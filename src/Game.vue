@@ -2,13 +2,10 @@
 import {ref,onUpdated} from 'vue'
 import {getUniqueSudoku} from './sovler/UniqueSudoku'
 import {SudokuContent,SudokuArray,ArraySudoku} from './context/SudokuContext'
-import Footer from './components/layout/Footer.vue';
 import Header from './components/layout/Header.vue';
 import Difficulty from './components/Difficulty.vue';
 import Timer from './components/Timer.vue';
 import Action from './components/Action.vue';
-import Mode from './components/Mode.vue';
-import GameSection from './components/layout/GameSection.vue';
 
 let difficulty = ref("Easy")
 let zero = ref("0")
@@ -118,16 +115,12 @@ function onClickOverlay(){
         </div>
 
         <div class="status__actions">
-          <!-- <Action action='undo' @action-click="undo()" /> -->
           <Action action='erase' @action-click="erase()" />
           <Action action='hint' @action-click="hint()"/>
-          <!-- <Mode mode='mistakes' @mode-click="mistakes()" /> -->
-          <!-- <Mode mode='fast' @mode-click="fast()" /> -->
         </div>
       </section>
 
     </div>
-    <Footer name="Elone Hoo"></Footer>
 
     <div @click="onClickOverlay()" :class="[isSolved ? 'overlay overlay--visible':'overlay']">
         <h2 class="overlay__text">
