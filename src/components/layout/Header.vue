@@ -4,7 +4,7 @@
 <template>
     <header className="header">
       <h1>
-        Su<span className="header__group-one">do</span><span className="header__group-two">ku</span>
+        <span className="header__group-one">Sudoku</span><span className="header__group-two"></span>
       </h1>
       <h2 @click="$emit('newGame')">
         New Game
