@@ -2,12 +2,12 @@
  @import url('https://fonts.googleapis.com/css?family=Teko|Noto+Sans|Source+Sans+Pro:300,400,600');
 
  :root {
-   --background-color: #191919;
+   --background-color: #ffffff;
    --color-blue: hsl(136, 68%, 38%);
    --color-grey: hsl(136, 55%, 25%);
    --color-grey-light: hsl(134, 45%, 25%);
    --color-grey-lighter: hsl(136, 52%, 45%);
-   --color-orange: hsl(135, 59%, 11%);
+   --color-orange: hsl(134, 18%, 72%);
    --color-orange-dark: hsl(106, 83%, 66%);
  }
  
